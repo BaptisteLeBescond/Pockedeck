@@ -12,3 +12,6 @@ Sauvegarde Deck -> Serialization
 
 4 :
 Recherche
+
+
++ Design UML et explication sommaire
