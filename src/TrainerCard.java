@@ -26,5 +26,7 @@ public class TrainerCard extends Card {
 		return Rule;
 	}
 
-	
+	public String toString(){
+		return "Name : " + this.getName() + "\nType : " + this.getType() + "\nTrainer Type : " + this.getTrainerType() + "\nText Box : " + this.getTextBox() + "\nRule : " + this.getRule();
+	}
 }
