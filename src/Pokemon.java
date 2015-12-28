@@ -64,5 +64,14 @@ public class Pokemon extends Card{
 	public String getSecondElement() {
 		return secondElement;
 	}
+	
+	public String toString(){
+		if(this.getSecondElement() != "None"){
+			return "Name : " + this.getName() + "\nType : " + this.getType() + "\nLife Points : " + this.getLifePoints() + "\nElements : " + this.getFirstElement() + " / " + this.getSecondElement() + "\nStage : " + this.getStage();
+		}
+		else{
+			return "Name : " + this.getName() + "\nType : " + this.getType() + "\nLife Points : " + this.getLifePoints() + "\nElement : " + this.getFirstElement() + "\nStage : " + this.getStage();
+		}
+	}
 
 }
