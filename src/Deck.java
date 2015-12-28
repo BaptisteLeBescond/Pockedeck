@@ -7,6 +7,10 @@ public class Deck {
 		return set;
 	}
 
+	/**
+	 * 
+	 * @param card
+	 */
 	public void addCard(Card card){
 		set.add(card);
 	}

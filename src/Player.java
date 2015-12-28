@@ -4,6 +4,10 @@ public class Player {
 	private Deck deck;
 	private int prizeCards;
 	
+	/**
+	 * 
+	 * @param name
+	 */
 	public Player(String name){
 		this.name = name;
 		this.deck = new Deck();
@@ -20,6 +24,10 @@ public class Player {
 	
 	public int getPrizeCards(){
 		return prizeCards;
+	}
+	
+	public String toString(){
+		return name;
 	}
 }
 
