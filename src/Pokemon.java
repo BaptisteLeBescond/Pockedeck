@@ -1,52 +1,52 @@
 
-public class Pokemon {
-	private String Type;
+public class Pokemon extends Card{
 	private int LifePoints;
-	private String Name;
+	private String firstElement;
+	private String secondElement;
 	private int Stage;
 	private Pokemon EvolveFrom;
 	
+	public static String Elements[] = {"grass", "fire", "water", "lighting", "psychic", "fighting", "darkness", "metal", "fairy", "dragon", "colorless", "null" };
+	
 	/**
 	 * 
-	 * @param t
-	 * @param lp
-	 * @param n
-	 * @param s
+	 * @param name
+	 * @param type
+	 * @param lifepoints
+	 * @param firstelement
+	 * @param secondelement
+	 * @param stage
 	 */
-	public Pokemon(String t, int lp, String n, int s){
-		Type = t;
-		LifePoints = lp;
-		Name = n;
-		Stage = s;
+	public Pokemon(String name, String type, int lifepoints, String firstelement, String secondelement, int stage){
+		super(name, type);
+		LifePoints = lifepoints;
+		firstElement = firstelement;
+		secondElement = secondelement;
+		Stage = stage;
 		EvolveFrom = null;
 	}
 	
 	/**
 	 * 
-	 * @param t
-	 * @param lp
-	 * @param n
-	 * @param s
-	 * @param ef
+	 * @param name
+	 * @param type
+	 * @param lifepoints
+	 * @param firstelement
+	 * @param secondelement
+	 * @param stage
+	 * @param evolvefrom
 	 */
-	public Pokemon(String t, int lp, String n, int s, Pokemon ef){
-		Type = t;
-		LifePoints = lp;
-		Name = n;
-		Stage = s;
-		EvolveFrom = ef;
-	}
-	
-	public String getType() {
-		return Type;
+	public Pokemon(String name, String type, int lifepoints, String firstelement, String secondelement, int stage, Pokemon evolvefrom){
+		super(name, type);
+		LifePoints = lifepoints;
+		firstElement = firstelement;
+		secondElement = secondelement;
+		Stage = stage;
+		EvolveFrom = evolvefrom;
 	}
 	
 	public int getLifePoints() {
 		return LifePoints;
-	}
-	
-	public String getName() {
-		return Name;
 	}
 	
 	public int getStage() {
@@ -55,6 +55,14 @@ public class Pokemon {
 	
 	public Pokemon getEvolveFrom() {
 		return EvolveFrom;
+	}
+
+	public String getFirstElement() {
+		return firstElement;
+	}
+
+	public String getSecondElement() {
+		return secondElement;
 	}
 
 }
