@@ -13,6 +13,12 @@ public class PokemonAdded implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		// TODO Auto-generated method stub
-		System.out.println(panel.getData());
+
+		// To change, whether pokemon, trainer or energy is selected before
+		Card card = new Pokemon(panel.getName(), "pokemon", Integer.parseInt(panel.getLifePoints()), panel.getFirstElement(), panel.getSecondElement(), 0);
+		Deck deck = new Deck();
+		deck.addCard(card);
+		
+		System.out.println(card);
 	}
 }
